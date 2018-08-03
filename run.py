@@ -30,7 +30,7 @@ if __name__ == "__main__":
     ],**settings.web)
     application.listen(9000, xheaders = True)
 
-    try:
-        tornado.ioloop.IOLoop.current().start()
-    except (KeyboardInterrupt,BaseException):
-        pass
+    print('server start')
+
+    tornado.ioloop.IOLoop.current().start()
+
